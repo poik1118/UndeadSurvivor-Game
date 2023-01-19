@@ -19,13 +19,13 @@ public class Spawner : MonoBehaviour
         timer += Time.deltaTime;
 
         if(timer > 0.5f){
-            timer = 0f;
+            timer = 0;
             Spawn();
         }
     }
 
     void Spawn(){
-        GameObject enemy = GameManager.instance.poolManager.GetPool(Random.Range(0, 5));
+        GameObject enemy = GameManager.instance.poolManager.GetPool(Random.Range(0, 2));
         enemy.transform.position = spawnPoint[Random.Range(1, spawnPoint.Length)].position;
     }
 }
