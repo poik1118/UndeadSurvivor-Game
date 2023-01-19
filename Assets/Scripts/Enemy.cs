@@ -18,6 +18,11 @@ public class Enemy : MonoBehaviour
         spriteRen = GetComponent<SpriteRenderer>();
     }
 
+    void OnEnable()
+    {
+        target = GameManager.instance.player.GetComponent<Rigidbody2D>();   
+    }
+
     void FixedUpdate()
     {
         if( !isLive ) return;
@@ -37,4 +42,5 @@ public class Enemy : MonoBehaviour
         // 바라보는 방향 조정
         spriteRen.flipX = target.position.x < rigid.position.x;
     }
+
 }
