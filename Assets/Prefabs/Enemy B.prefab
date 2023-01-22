@@ -160,6 +160,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  health: 0
+  maxHealth: 0
+  animeControl: []
   target: {fileID: 0}
 --- !u!114 &154695879636425572
 MonoBehaviour:
