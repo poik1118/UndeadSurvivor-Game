@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 3195485873195492308}
   m_Layer: 0
   m_Name: Farmer 0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -870,6 +870,7 @@ MonoBehaviour:
   - {fileID: 2438092252617755865}
   - {fileID: 1499505800416643536}
   - {fileID: 7097495667230326114}
+  spawnData: []
 --- !u!1 &9056754012692692901
 GameObject:
   m_ObjectHideFlags: 0
